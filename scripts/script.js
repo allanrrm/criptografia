@@ -14,21 +14,44 @@ function copiar() {
 }
 
 function encriptografar() {
-    resultado = '';
-    let caracterResultado;
+    resultado = ''
+    let caracterVerificado = ''
     let textoSerCriptografado = (document.getElementById('textoCriptografarDescriptografar').value).split('');
-    for (i = 0; i < textoSerCriptografado.length; i++) {
-        if (arrayDescriptografia.includes(textoSerCriptografado[i])) {
+    let arrayCriptado = textoSerCriptografado
+    let leresultado = '';
+    for (i = 0; i < arrayCriptado.length; i++) {
+        caracterVerificado = textoSerCriptografado[i];
+        if (arrayDescriptografia.includes(caracterVerificado)) {
+            for (j = 0; j < arrayDescriptografia.length; j++) {
+                caracterVerificado = caracterVerificado.replace(arrayDescriptografia[j], arrayCriptografia[j]);
+                if (caracterVerificado == arrayCriptografia[j]) {
+                    leresultado += caracterVerificado;
+                }
+            }
 
-            caracterResultado = encriptar(textoSerCriptografado[i], arrayDescriptografia, arrayCriptografia);
         }
         else {
-            caracterResultado = textoSerCriptografado[i];
+            leresultado += caracterVerificado;
         }
-        resultado = resultado + caracterResultado;
     }
+    resultado = leresultado;
     exibirTextoNaTela('idResultado', resultado);
 }
+// resultado = '';
+// let caracterResultado;
+// let textoSerCriptografado = (document.getElementById('textoCriptografarDescriptografar').value).split('');
+// for (i = 0; i < textoSerCriptografado.length; i++) {
+//     if (arrayDescriptografia.includes(textoSerCriptografado[i])) {
+
+//         caracterResultado = encriptar(textoSerCriptografado[i], arrayDescriptografia, arrayCriptografia);
+//     }
+//     else {
+//         caracterResultado = textoSerCriptografado[i];
+//     }
+//     resultado = resultado + caracterResultado;
+// }
+// exibirTextoNaTela('idResultado', resultado);
+
 
 function descriptografar() {
     resultado = '';
