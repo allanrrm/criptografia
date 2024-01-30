@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.corpo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-color: #F3F5FC;
+    height: 100vh;
+    gap: 10px;
+}
+
+.corpo_titulo {
+    text-align: center;
+}
+
+.apresentacao {
+    display: flex;
+    flex-grow: 1
+}
+
+.apresentacao__conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5% 5% 0% 10%;
+    gap: 10px;
+
+}
+
+.apresentacao__conteudo__corpo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo__corpo__texto {
+    display: flex;
+    flex-direction: column;
+    height: 48px;
+    width: 680px;
+}
+
+.apresentacao__conteudo__corpo__botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 1%;
+}
+
+.apresentacao__conteudo__corpo__botoes__botao {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+
+}
+
+.apresentacao__conteudo__corpo__botoes__botao__criptografar {
+    border: 438px 0px 0px 240px;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: #0A3871;
+    color: #FFFFFF;
+    border-color: #0A3871;
+    border-width: 1px;
+}
+
+.apresentacao__conteudo__corpo__botoes__botao__descriptografar {
+    border: 438px 0px 0px 240px;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border-color: #F3F5FC;
+    border-color: #0A3871;
+    border-width: 1px;
+}
+
+.apresentacao__conteudo__resultado {
+    /*div Pai*/
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 32px;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0px 24px 32px -8px #00000014;
+
+}
+
+.apresentacao__conteudo__resultado__texto {
+    /*div filho*/
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+
+}
+
+.apresentacao__conteudo__resultado__texto__botoes {
+    /*div filho*/
+    margin: 1%;
+}
+
+.apresentacao__conteudo__resultado__texto__botoes__copiar {
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    margin: 1%;
+    border-color: #0A3871;
+    border-width: 1px;
+}
+
+.rodape {
+    bottom: 0;
+    text-align: center;
+    background-color: #0A3871;
+    color: #F3F5FC;
+
+}

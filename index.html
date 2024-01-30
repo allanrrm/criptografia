@@ -8,20 +8,44 @@
     <link rel="stylesheet" href="/styles/style.css">
 </head>
 
-<body>
+<body class="corpo">
     <header>
         <img href="/assets/logo" alt="logo">
-        <h1>Digite o texto que deseja criptografar/descriptografar</h1>
+        <h1 class="corpo_titulo">
+            Decifrando o Enigma
+        </h1>
     </header>
-    <main>
-        <input type="textarea" id="textoCriptografarDescriptografar" />
-        <button type="submit" onclick="encriptografar()">encriptografar</button>
-        <button type="submit" onclick="descriptografar()">descriptografar</button>
-        <p id="idResultado">Resultado</p>
-        <button type="submit" onclick="copiar()">Copiar</button>
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <div class="apresentacao__conteudo__corpo">
+                <input type="textarea" id="textoCriptografarDescriptografar"
+                    class="apresentacao__conteudo__corpo__texto" />
+                <div class="apresentacao__conteudo__corpo__botoes">
+                    <p>Apenas letras minusculas e sem acento</p>
+                    <div class="apresentacao__conteudo__corpo__botoes__botao">
+                        <button class="apresentacao__conteudo__corpo__botoes__botao__criptografar" type="submit"
+                            onclick="encriptografar()">Criptografar</button>
+                        <button class="apresentacao__conteudo__corpo__botoes__botao__descriptografar" type="submit"
+                            onclick="descriptografar()">Descriptografar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="apresentacao__conteudo__resultado">
+                <div class="apresentacao__conteudo__resultado__texto">
+                    <p id="idResultado">Resultado</p>
+                    <p>Nenhuma mensagem encontrada</p>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+                </div>
+                <div class="apresentacao__conteudo__resultado__texto__botoes">
+                    <button class="apresentacao__conteudo__resultado__texto__botoes__copiar" type="submit"
+                        onclick="copiar()">Copiar</button>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-        <p>Criado por Allan Rezende</p>
+        <p class="rodape">Criado por Allan Rezende</p>
+        <p class="rodape">Projeto da Alura One</p>
     </footer>
     <script src="/scripts/script.js" defer></script>
 </body>
