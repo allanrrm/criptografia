@@ -28,7 +28,6 @@ function encriptografar() {
                     leresultado += caracterVerificado;
                 }
             }
-
         }
         else {
             leresultado += caracterVerificado;
@@ -65,22 +64,22 @@ function descriptografar() {
     exibirTextoNaTela('idResultado', resultado);
 }
 
-function encriptar(caracter, arrayEntrada, arraySaida) {
+// function encriptar(caracter, arrayEntrada, arraySaida) {
 
-    switch (caracter) {
-        case arrayEntrada[0]:
-            return caracter = arraySaida[0];
-        case arrayEntrada[1]:
-            return caracter = arraySaida[1];
-        case arrayEntrada[2]:
-            return caracter = arraySaida[2];
-        case arrayEntrada[3]:
-            return caracter = arraySaida[3];
-        case arrayEntrada[4]:
-            return caracter = arraySaida[4];
+//     switch (caracter) {
+//         case arrayEntrada[0]:
+//             return caracter = arraySaida[0];
+//         case arrayEntrada[1]:
+//             return caracter = arraySaida[1];
+//         case arrayEntrada[2]:
+//             return caracter = arraySaida[2];
+//         case arrayEntrada[3]:
+//             return caracter = arraySaida[3];
+//         case arrayEntrada[4]:
+//             return caracter = arraySaida[4];
 
-    }
-}
+//     }
+// }
 
 /* onkeyup - evento que dispara em tempo de execução, pretendo utilizar quando o usuario usar algum tipo de caracter especial
 etapa final do projeto */

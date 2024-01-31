@@ -4,24 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criptografia</title>
+    <title>Decifrando o Enigma</title>
     <link rel="stylesheet" href="/styles/style.css">
 </head>
 
 <body class="corpo">
-    <header>
-        <img href="/assets/logo" alt="logo">
-        <h1 class="corpo_titulo">
-            Decifrando o Enigma
-        </h1>
+    <header class="corpo__cabecalho">
+        <!-- <img src="/assets/logo.png" alt="logo" class="corpo__cabecalho__logo"> -->
+        <nav class="corpo__cabecalho__menu">
+            <a href="index.html" class="corpo__cabecalho__menu__link">Inicio</a>
+            <a href="configuracoes.html " class="corpo__cabecalho__menu__link">Configurações</a>
+        </nav>
     </header>
     <main class="apresentacao">
         <section class="apresentacao__conteudo">
             <div class="apresentacao__conteudo__corpo">
                 <input type="textarea" id="textoCriptografarDescriptografar"
-                    class="apresentacao__conteudo__corpo__texto" />
+                    class="apresentacao__conteudo__corpo__texto" placeholder="Digite Seu Texto aqui..." />
                 <div class="apresentacao__conteudo__corpo__botoes">
-                    <p>Apenas letras minusculas e sem acento</p>
+                    <p class="apresentacao__conteudo__corpo__botoes__aviso">Apenas letras minusculas e sem acento</p>
                     <div class="apresentacao__conteudo__corpo__botoes__botao">
                         <button class="apresentacao__conteudo__corpo__botoes__botao__criptografar" type="submit"
                             onclick="encriptografar()">Criptografar</button>
@@ -32,9 +33,11 @@
             </div>
             <div class="apresentacao__conteudo__resultado">
                 <div class="apresentacao__conteudo__resultado__texto">
-                    <p id="idResultado">Resultado</p>
-                    <p>Nenhuma mensagem encontrada</p>
-                    <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+                    <img src="/assets/logo.png" class="apresentacao__conteudo__resultado__texto__imagem">
+                    <p id="idResultado" class="apresentacao__conteudo__resultado__texto__resultado">Resultado</p>
+                    <p class="apresentacao__conteudo__resultado__texto__aviso">Nenhuma mensagem encontrada</p>
+                    <p class="apresentacao__conteudo__resultado__texto__informacao">Digite um texto que você deseja
+                        criptografar ou descriptografar</p>
                 </div>
                 <div class="apresentacao__conteudo__resultado__texto__botoes">
                     <button class="apresentacao__conteudo__resultado__texto__botoes__copiar" type="submit"
@@ -44,8 +47,8 @@
         </section>
     </main>
     <footer>
-        <p class="rodape">Criado por Allan Rezende</p>
-        <p class="rodape">Projeto da Alura One</p>
+        <p class="rodape">Criado por Allan Rezende <br />Projeto da Alura One</p>
+
     </footer>
     <script src="/scripts/script.js" defer></script>
 </body>
